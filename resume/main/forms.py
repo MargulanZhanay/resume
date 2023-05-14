@@ -2,7 +2,6 @@ from django import forms
 from .models import ContactProfile
 
 
-
 class ContactForm(forms.ModelForm):
 
     name = forms.CharField(max_length=100, required=True,
@@ -18,7 +17,6 @@ class ContactForm(forms.ModelForm):
                                   'placeholder': '*Message..',
                                   'rows': 6,
                               }))
-    
 
     class Meta:
         model = ContactProfile
